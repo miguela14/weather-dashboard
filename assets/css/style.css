@@ -1,0 +1,29 @@
+body {
+    display: contents;
+    margin: 0;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+    background: rgb(14, 14, 167);
+}
+
+h1 {
+    color: aliceblue;
+}
+
+#form-section {
+    margin: 3rem auto;
+  max-width: 90vw;
+}
+
+ul {
+    margin: 3rem auto;
+    font-size: 1.75rem;
+}
+
+ul li {
+    margin: 1.2rem 0;
+}
