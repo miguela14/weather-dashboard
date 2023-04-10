@@ -38,5 +38,25 @@ $.when(
 
     fiveDayForecast.push({ date, temp: tempF, humidity, weatherDesc });
     }
+    // Update the UI with the current and forecast weather data
+    function updateCityConditions() {
+
+      
+      // Select each list item and update its text content
+      
+      var citySelector = document.querySelector("#city-name");
+      var descriptionItem = document.querySelector("#city-description");
+      var temperatureItem = document.querySelector("#city-temp");
+      var humidityItem = document.querySelector("#city-humitity");
+      var windSpeedItem = document.querySelector("#city-wind");
+      
+      //Setting the text content of the list items above
+      citySelector.textContent = cityName + " " + "(" + currentDay + ")";
+      descriptionItem.textContent = "Description: " + weatherDesc;
+      temperatureItem.textContent = `Temperature:  ${Math.round((currentTemp - 273.15) * 9/5 + 32)} °F`
+      humidityItem.textContent = "Humidity: " + humidity + "%";
+      windSpeedItem.textContent = "Wind Speed: " + windSpeed + " m/s";
+    }
+    updateCityConditions()
   });
 });
