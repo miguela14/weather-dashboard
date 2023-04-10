@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
     <title>Weather Dashboard</title>
@@ -18,6 +18,7 @@
         <h1>Weather Dashboard</h1>
     </header>
 
+  <main>
     <section id="form-section">
         <h2>Search for city:</h2>
         <form id="city-form">
@@ -28,7 +29,27 @@
         <ul id="city-list"></ul>
     </section>
 
+    <section id="city-date"></section>
+    
+    <section class="city-conditions">
+        <li id="city-name"></li>
+        <li id="city-description"></li>
+        <li id="city-temp"></li>
+        <li id="city-humitity"></li>
+        <li id="city-wind"></li>
+    </section>
+
+    <div id="five-day-forecast">
+        <section class="card"></section>
+        <section class="card"></section>
+        <section class="card"></section>
+        <section class="card"></section>
+        <section class="card"></section>
+    </div>
+  </main>  
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
