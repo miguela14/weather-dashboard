@@ -24,7 +24,7 @@ $.when(
     humidity = currentWeatherResponse[0].main.humidity;
     windSpeed = currentWeatherResponse[0].wind.speed;
     weatherDesc = currentWeatherResponse[0].weather[0].description;
-
+    
     const forecastData = forecastResponse[0].list;
     const fiveDayForecast = [];
   for (let i = 7; i < forecastData.length; i += 8) {

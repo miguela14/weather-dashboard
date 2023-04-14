@@ -1,19 +1,25 @@
-# weather-dashboard
+# Weather Dashboard
 
-User Story
+## Overview
+The Weather Dashboard is a web application that displays weather information for a selected city. Users can search for a city by name, and the application retrieves real-time weather data using the OpenWeather API.
 
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+## Features
+Search for a city by name
+View current weather conditions (temperature, humidity, wind speed, UV index)
+View a 5-day forecast with daily weather conditions
+View a history of recent searches
 
-Acceptance Criteria
+## Usage
+Type the name of a city in the search bar and click the search button.
+The current weather conditions and 5-day forecast for the selected city will be displayed.
+The search history will be updated with the selected city.
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+## Technologies Used
+HTML
+CSS
+JavaScript
+jQuery
+OpenWeather API
+
+![](/assets/images/weather-dashboard.PNG)
+[https://miguela14.github.io/weather-dashboard]
