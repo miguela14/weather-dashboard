@@ -58,5 +58,23 @@ $.when(
       windSpeedItem.textContent = "Wind Speed: " + windSpeed + " m/s";
     }
     updateCityConditions()
+
+    $("#five-day-forecast").html("");
+    fiveDayForecast.forEach((day) => {
+      $("#five-day-forecast").append(`<section class="card">
+      <p>${day.date}</p>
+      <p>Temperature: ${day.temp} °F</p>
+      <p>Humidity: ${day.humidity}%</p>
+      <p>Description: ${day.weatherDesc}</p>
+      </section>`);
+    });
+    
+    // Store the searched city and update search history UI
+    const searchedCity = {
+      name: cityName
+    };
+    $("#city-list").append(
+      `<li>${searchedCity.name}</li>`
+    );
   });
 });
